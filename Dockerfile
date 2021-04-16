@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as builder
+FROM ubuntu:20.04 as builder
 
 RUN set -ex; \
   apt-get update; \
@@ -32,7 +32,7 @@ RUN set -ex; \
   cargo build --release
 
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 COPY --from=builder /home/polkadot/polkadot/target/release/polkadot /usr/bin/
 

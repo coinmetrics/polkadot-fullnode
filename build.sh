@@ -2,6 +2,8 @@
 
 set -e
 
+export DOCKER_REGISTRY_REPO="${DOCKER_REGISTRY_REPO:-"$(basename "$PWD")"}"
+
 export VERSION=$(cat version.txt)
 export TOOLCHAIN=$(cat toolchain.txt)
 echo "Image version ${VERSION}, building with toolchain ${TOOLCHAIN}."

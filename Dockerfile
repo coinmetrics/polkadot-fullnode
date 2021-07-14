@@ -7,6 +7,7 @@ RUN set -ex; \
     ca-certificates \
     curl \
     cmake \
+    make \
     pkg-config \
     libssl-dev \
     git \

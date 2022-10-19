@@ -12,6 +12,7 @@ RUN set -ex; \
     libssl-dev \
     git \
     clang \
+    protobuf-compiler \
   ; \
   rm -rf /var/lib/apt/lists/*
 
